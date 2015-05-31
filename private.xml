@@ -5,6 +5,10 @@
     <url type="file">/Applications/Xcode.app</url>
   </vkopenurldef>
   <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Reminders</name>
+    <url type="file">/Applications/Reminders.app</url>
+  </vkopenurldef>
+  <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_iTunes</name>
     <url type="file">/Applications/iTunes.app</url>
   </vkopenurldef>
@@ -182,6 +186,15 @@
       __KeyToKey__
       KeyCode::I, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_iTunes,
+    </autogen>
+  </item>
+  <item>
+    <name>right^ + r to launch Reminders</name>
+    <identifier>private.Right_Control_R</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::R, ModifierFlag::CONTROL_R,
+      KeyCode::VK_OPEN_URL_APP_Reminders,
     </autogen>
   </item>
 </root>
