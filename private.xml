@@ -210,7 +210,7 @@
     <identifier>private.Right_Control_W</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::R, ModifierFlag::CONTROL_W,
+      KeyCode::W, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_Notes,
     </autogen>
   </item>
