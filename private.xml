@@ -5,8 +5,16 @@
     <url type="file">/Applications/Xcode.app</url>
   </vkopenurldef>
   <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_iOS_Simulator</name>
+    <url type="file">/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app</url>
+  </vkopenurldef>
+  <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_Reminders</name>
     <url type="file">/Applications/Reminders.app</url>
+  </vkopenurldef>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Notes</name>
+    <url type="file">/Applications/Notes.app</url>
   </vkopenurldef>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_iTunes</name>
@@ -195,6 +203,24 @@
       __KeyToKey__
       KeyCode::R, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_Reminders,
+    </autogen>
+  </item>
+  <item>
+    <name>right^ + r to launch Notes</name>
+    <identifier>private.Right_Control_W</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::R, ModifierFlag::CONTROL_W,
+      KeyCode::VK_OPEN_URL_APP_Notes,
+    </autogen>
+  </item>
+  <item>
+    <name>right^ + z to launch iOS Simulator</name>
+    <identifier>private.Right_Control_Z</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::Z, ModifierFlag::CONTROL_R,
+      KeyCode::VK_OPEN_URL_APP_iOS_Simulator,
     </autogen>
   </item>
 </root>
