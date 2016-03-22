@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <root>
   <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Mail</name>
+    <url type="file">/Applications/Mail.app</url>
+  </vkopenurldef>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_DayOne</name>
+    <url type="file">/Applications/Day One.app</url>
+  </vkopenurldef>
+  <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_Xcode</name>
     <url type="file">/Applications/Xcode.app</url>
   </vkopenurldef>
@@ -19,10 +27,6 @@
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_KakaoTalk</name>
     <url type="file">/Applications/KakaoTalk.app</url>
-  </vkopenurldef>
-  <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_VisualJSON</name>
-    <url type="file">/Applications/VisualJSON.app</url>
   </vkopenurldef>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_Slack</name>
@@ -65,148 +69,159 @@
   </vkopenurldef>
 
   <item>
-    <name>right^ + s to open Safari</name>
+    <name>right^ + left⇧ e to open Mail</name>
+    <identifier>private.Right_Control_e</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::E, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
+      KeyCode::VK_OPEN_URL_APP_Mail,
+    </autogen>
+  </item>
+
+  <item>
+    <name>right^ + left⇧ o to open Day One</name>
+    <identifier>private.Right_Control_o</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::O, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
+      KeyCode::VK_OPEN_URL_APP_DayOne,
+    </autogen>
+  </item>
+
+  <item>
+    <name>right^ + left⇧ s to open Safari</name>
     <identifier>private.Right_Control_s</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::S, ModifierFlag::CONTROL_R,
+      KeyCode::S, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_Safari,
     </autogen>
   </item>
 
   <item>
-    <name>right^ + c to launch Xcode</name>
+    <name>right^ + left⇧ c to launch Xcode</name>
     <identifier>private.Right_Control_x</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::X, ModifierFlag::CONTROL_R,
+      KeyCode::X, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_Xcode,
     </autogen>
   </item>
 
   <item>
-    <name>right^ + d to launch Finder</name>
+    <name>right^ + left⇧ d to launch Finder</name>
     <identifier>private.Right_Control_f</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::F, ModifierFlag::CONTROL_R,
+      KeyCode::F, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_Finder,
     </autogen>
   </item>
   <item>
-    <name>right^ + T to launch Terminal</name>
+    <name>right^ + left⇧ T to launch Terminal</name>
     <identifier>private.Right_Control_t</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::T, ModifierFlag::CONTROL_R,
+      KeyCode::T, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_Terminal,
     </autogen>
   </item>
   <item>
-    <name>right^ + a to launch Google App Engine</name>
+    <name>right^ + left⇧ a to launch Google App Engine</name>
     <identifier>private.Right_Control_g</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::G, ModifierFlag::CONTROL_R,
+      KeyCode::G, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_GoogleAppEngine,
     </autogen>
   </item>
   <item>
-    <name>right^ + M to launch MySQLWorkbench</name>
+    <name>right^ + left⇧ M to launch MySQLWorkbench</name>
     <identifier>private.Right_Control_M</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::M, ModifierFlag::CONTROL_R,
+      KeyCode::M, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_MySQLWorkbench,
     </autogen>
   </item>
   <item>
-    <name>right^ + C to launch Coda</name>
+    <name>right^ + left⇧ C to launch Coda</name>
     <identifier>private.Right_Control_C</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::C, ModifierFlag::CONTROL_R,
+      KeyCode::C, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_Coda,
     </autogen>
   </item>
   <item>
-    <name>right^ + E to launch Evernote</name>
-    <identifier>private.Right_Control_E</identifier>
+    <name>right^ + left⇧ V to launch Evernote</name>
+    <identifier>private.Right_Control_V</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::E, ModifierFlag::CONTROL_R,
+      KeyCode::V, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_Evernote,
     </autogen>
   </item>
   <item>
-    <name>right^ + 1 to launch 1password</name>
+    <name>right^ + left⇧ 1 to launch 1password</name>
     <identifier>private.Right_Control_1</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::KEY_1, ModifierFlag::CONTROL_R,
+      KeyCode::KEY_1, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_1Password,
     </autogen>
   </item>
   <item>
-    <name>right^ + a to launch Slack</name>
+    <name>right^ + left⇧ a to launch Slack</name>
     <identifier>private.Right_Control_a</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::A, ModifierFlag::CONTROL_R,
+      KeyCode::A, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_Slack,
     </autogen>
   </item>
   <item>
-    <name>right^ + a to launch KakaoTalk</name>
+    <name>right^ + left⇧ a to launch KakaoTalk</name>
     <identifier>private.Right_Control_k</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::K, ModifierFlag::CONTROL_R,
+      KeyCode::K, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_KakaoTalk,
     </autogen>
   </item>
   <item>
-    <name>right^ + v to launch VisualJSON</name>
-    <identifier>private.Right_Control_V</identifier>
-    <autogen>
-      __KeyToKey__
-      KeyCode::V, ModifierFlag::CONTROL_R,
-      KeyCode::VK_OPEN_URL_APP_VisualJSON,
-    </autogen>
-  </item>
-  <item>
-    <name>right^ + d to Show Desktop</name>
+    <name>right^ + left⇧ d to Show Desktop</name>
     <identifier>private.Right_Control_D</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::D, ModifierFlag::CONTROL_R,
+      KeyCode::D, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::F5,
     </autogen>
   </item>
   <item>
-    <name>right^ + i to launch iTunes</name>
+    <name>right^ + left⇧ i to launch iTunes</name>
     <identifier>private.Right_Control_I</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::I, ModifierFlag::CONTROL_R,
+      KeyCode::I, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_iTunes,
     </autogen>
   </item>
   <item>
-    <name>right^ + r to launch Reminders</name>
+    <name>right^ + left⇧ r to launch Reminders</name>
     <identifier>private.Right_Control_R</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::R, ModifierFlag::CONTROL_R,
+      KeyCode::R, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_Reminders,
     </autogen>
   </item>
   <item>
-    <name>right^ + r to launch Notes</name>
-    <identifier>private.Right_Control_W</identifier>
+    <name>right^ + left⇧ n to launch Notes</name>
+    <identifier>private.Right_Control_N</identifier>
     <autogen>
       __KeyToKey__
-      KeyCode::W, ModifierFlag::CONTROL_R,
+      KeyCode::N, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_R,
       KeyCode::VK_OPEN_URL_APP_Notes,
     </autogen>
   </item>
